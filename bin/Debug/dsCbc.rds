@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="dsCbc">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=datanextapp.no-ip.org,5020\MSSQLMVC;Initial Catalog=cbc_desenv</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>0fdcc545-cc63-46e7-bac4-8c8ffb52fa90</DataSourceID>
+</RptDataSource>

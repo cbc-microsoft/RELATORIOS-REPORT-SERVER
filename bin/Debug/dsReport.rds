@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="dsReport">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=sqlcbc;Initial Catalog=cbc_homologacao</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>0fdcc545-cc63-46e7-bac4-8c8ffb52fa90</DataSourceID>
+</RptDataSource>

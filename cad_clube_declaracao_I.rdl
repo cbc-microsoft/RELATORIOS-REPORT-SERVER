@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Na qualidade de representante legal da " + First(Fields!nome_clube.Value, "rpt_declaracao_header").ToString () +  ", CNPJ:" + First(Fields!cnpj.Value, "rpt_declaracao_header").ToString () + " ," + 
+"declaro para fins de obtenção de recursos descentralizados previstos no § 10, do art. 56, da Lei Pelé nº 9615, de 1998, junto à Confederação Brasileira de Clubes – CBC, destinados a projetos desta Entidade, previamente aprovados pela CBC, que:" + 
+VBCRLF +  
+space(10) + "- A referida entidade não se encontra em situação de mora e nem em débito junto a " +  
+"qualquer órgão ou entidade da administração públicafederal, sob as penas do art. 299 " +  
+"do Código Penal, ; "  + 
+VBCRLF +  
+space(10) + "-  Não  possui  como  dirigente  agente  político  de  Poder  ou  do  Ministério  Público,  tanto " +  
+"quanto  dirigente  de  órgão  ou  entidade  da  administração  pública,  de  qualquer  esfera " +  
+"governamental  ou  respectivo  cônjuge  ou  companheiro, bem  como  parente  em  linha " +  
+"reta, colateral ou por afinidade, até segundo grau;"  + 
+VBCRLF +   
+space(10) + "- Seus dirigentes/administradores e membros de conselho fiscal não estão em exercício " +  
+"de cargo ou função em entidade de administração do desporto"</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>2.56328cm</Top>
+        <Height>0.6cm</Height>
+        <Width>16.77458cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>LTR</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DECLARAÇÃO</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>0.41275cm</Top>
+        <Height>0.86458cm</Height>
+        <Width>16.77458cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= "__________________, _____ de___________________ de " + Datetime.Now.Year.ToString()</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.94983cm</Top>
+        <Height>0.6cm</Height>
+        <Width>16.77458cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= First(Fields!nome_dirigente.Value, "rpt_declaracao_header") &amp; vbcrlf &amp; First(Fields!cargo_funcao.Value, "rpt_declaracao_header")</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>7.46023cm</Top>
+        <Height>0.6cm</Height>
+        <Width>16.77458cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>		&lt;div style="text-align: justify;"&gt;
+			&lt;p&gt;
+				Em atendimento ao disposto no item 4.4, &amp;ldquo;a&amp;rdquo; do Edital de Chamamento Interno n&amp;ordm; 03/2014, encaminho anexo, o projeto &lt;strong&gt;&amp;ldquo;NOME DO PROJETO&amp;rdquo;,&lt;/strong&gt; que prev&amp;ecirc; o(a&lt;em&gt;) &lt;strong&gt;&amp;ldquo;descrever objeto/objetivos do projeto pretendido&amp;rdquo;,&lt;/strong&gt;&lt;/em&gt; acompanhado de toda a documenta&amp;ccedil;&amp;atilde;o solicitada, para an&amp;aacute;lise da Confedera&amp;ccedil;&amp;atilde;o Brasileira de Clubes &amp;ndash; CBC.&lt;/p&gt;
+		&lt;/div&gt;
+	
+</Value>
+                <MarkupType>HTML</MarkupType>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>3.64808cm</Top>
+        <Height>0.6cm</Height>
+        <Width>16.77458cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>3.17332in</Height>
+    <Style />
+  </Body>
+  <Width>6.61458in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>6cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsCbc">
+      <DataSourceReference>dsReportII</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>e13dc355-c31a-475d-8bbe-b87165227147</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="rpt_declaracao_header">
+      <Query>
+        <DataSourceName>dsCbc</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@id_clube">
+            <Value>=Parameters!id_clube.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>rpt_declaracao_header</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="nome_clube">
+          <DataField>nome_clube</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cnpj">
+          <DataField>cnpj</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="codigo_filiacao">
+          <DataField>codigo_filiacao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nome_dirigente">
+          <DataField>nome_dirigente</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cargo_funcao">
+          <DataField>cargo_funcao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dt_fim_mandato">
+          <DataField>dt_fim_mandato</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="id_clube">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>id_clube</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>fe4b5634-4ec3-468e-a60d-2996f239da3e</rd:ReportID>
+</Report>
